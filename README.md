@@ -1,2 +1,0 @@
-# JonMoral.github.io
-Website
