@@ -33,9 +33,9 @@
 	<script>
 		audioPlayer();
 		function audioPlayer(){
-			$("audioPlayer")[0].src = $("ul li a")[0];
+			$("#audioPlayer")[0].src = $("#playlist li a")[0];
 			$("#audioPlayer")[0].play();
-			$("ul li a").click(function(e){
+			$("#playlist li a").click(function(e){
 				e.preventDefault();
 				$("#audioPlayer")[0].src = this;
 			});
