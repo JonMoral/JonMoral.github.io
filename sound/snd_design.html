@@ -12,6 +12,25 @@
 <p>Polymath Aesthetica</p>
 <h3>
 </h3>
+	<audio src="" controls id="audioPlayer">
+		Sorry, your browser doesn't support html5!
+	</audio>
+	<aside>
+		<audio controls="controls">
+		<source src="audio/Chimes.wav">
+	</aside>
+	<ul id ="playlist">
+		<li class="current-song"><a href="../sound/audio/Chimes.wav">Chimes</a></li>
+		<li><a href="../sound/audio/Gravel_Step.wav">Gravel Step</a></li>
+		<li><a href="../sound/audio/Head_Smash.wav">Head Smash</a></li>
+		<li><a href="../sound/audio/Paper_Ringing.wav">Paper Ripping with Ringing</a></li>
+		<li><a href="../sound/audio/Pulse.wav">Pulsing</a></li>
+		<li><a href="../sound/audio/Refrigerator_Rumble.wav">Rumble</a></li>
+		<li><a href="../sound/audio/Rotating_Stone.wav">Rotating Stone in Cave</a></li>
+		<li><a href="../sound/audio/Stone_Shatter.wav">Stone Shattering in Tunnel</a></li>
+		<li><a href="../sound/audio/Water_Step001.wav">Water Step</a></li>
+	</ul>
+
 </body>
 	<style>
 	body{
@@ -61,16 +80,16 @@
 	    color: white;
 	}
 
-	</style>
+	#playlist{
+		list-style: none;
+	}
+	#playlist li a{
+		color: black;
+		text-decoration: none;
+	}
+	#playlist .current-song a{
+		color:blue;
+	}
 
-	<aside>
-		<audio controls="controls">
-		<source src="audio/Chimes.wav">
-	</aside>
-	<ul>
-		  <li><a href="default.asp">Home</a></li>
-		  <li><a href="news.asp">News</a></li>
-		  <li><a href="contact.asp">Contact</a></li>
-		  <li><a href="about.asp">About</a></li>
-		</ul>
+	</style>
 </html>
