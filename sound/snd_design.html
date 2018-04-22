@@ -18,8 +18,8 @@
 		Sorry, your browser doesn't support html5!
 	</audio>
 	<ul id ="playlist">
-		<li class="current-song"><a href="../sound/audio/Chimes.wav">Chimes</a></li>
-		<li><a href=".Gravel_Step.wav">Gravel Step</a></li>
+		<li class="current-song"><a href="Chimes.wav">Chimes</a></li>
+		<li><a href="Gravel_Step.wav">Gravel Step</a></li>
 		<li><a href="Head_Smash.wav">Head Smash</a></li>
 		<li><a href="Paper_Ringing.wav">Paper Ripping with Ringing</a></li>
 		<li><a href="Pulse.wav">Pulsing</a></li>
@@ -36,12 +36,11 @@
 		audioPlayer();
 		function audioPlayer(){
 			$("audioPlayer")[0].src = $("#playlist li a") [0];
-			alert("hi");
 			$("#audioPlayer")[0].play();
 			$("#playlist li a").click(function(e){
 				e.preventDefault();
 				$("#audioPlayer")[0].src = this;
-			})
+			});
 		}
 	</script>
 </body>
