@@ -2,11 +2,9 @@
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <body>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-	</script>
 <!-- Navigation Bar -->
 <div class="navbar">
-  <a href="../index.html">Home</a>
+  <a class="active" href="../index.html">Home</a>
   <a href="sound/snd_design">Sound Design</a>
   <a href="resumé/pdf_viewer">Resumé</a>
 </div>
@@ -74,6 +72,11 @@
 	.navbar a:hover {
 	    background-color: #ddd;
 	    color: black;
+	}
+
+	.navbar a.active{
+		background-color: #2672c9;
+	    color: white;
 	}
 
 	/* Column container */
