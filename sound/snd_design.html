@@ -14,7 +14,7 @@
 		Sorry, your browser doesn't support html5!
 	</audio>
 	<ul id="playlist">
-		<li class="current-song" class="active"><a href="Chimes.wav">Chimes</a></li>
+		<li class="current-song"><a class="active" href="Chimes.wav">Chimes</a></li>
 		<li><a href="Gravel_Step.wav">Gravel Step</a></li>
 		<li><a href="Head_Smash.wav">Head Smash</a></li>
 		<li><a href="Paper_Ringing.wav">Paper Ripping with Ringing</a></li>
@@ -90,8 +90,12 @@
 
 	/*set as link as active*/
 	li a.active {
-    background-color: #4CAF50;
-    color: white;
+	    background-color: #4CAF50;
+	    color: white;
+	}
+	li a:hover:not(.active) {
+	    background-color: #555;
+	    color: white;
 	}
 
 	#audioPlayer{
