@@ -52,6 +52,19 @@
 			});
 		}
 	</script>
+
+	<script>
+		audioPlayer();
+		function audioPlayer(){
+			$("#audioPlayer")[0].src = $("#dropdown-content")[0];
+			$("#dropdown-content").click(function(e){
+				e.preventDefault();
+				$("#audioPlayer")[0].src = this;
+				$("#audioPlayer")[0].play();
+				$("#audioPlayer")[0].active = this;
+			});
+		}
+	</script>
 </body>
 	<style>
 	body{
