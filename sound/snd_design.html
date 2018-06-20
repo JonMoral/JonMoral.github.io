@@ -29,11 +29,10 @@
 	</ul>
 
 	<div class="dropdown">
-	  <button class="dropbtn">Dropdown</button>
+	  <button class="dropbtn">Tracks</button>
 	  <div class="dropdown-content">
 	    <li class="current-song"><a href="Chimes.wav">Chimes</a></li>
 	    <li><a href="Refrigerator_Rumble.WAV">Rumble</a></li>
-	    <a href="#">Link 3</a>
 	  </div>
 	</div>
 
@@ -45,6 +44,19 @@
 		function audioPlayer(){
 			$("#audioPlayer")[0].src = $("#playlist li a")[0];
 			$("#playlist li a").click(function(e){
+				e.preventDefault();
+				$("#audioPlayer")[0].src = this;
+				$("#audioPlayer")[0].play();
+				$("#audioPlayer")[0].active = this;
+			});
+		}
+	</script>
+
+	<script>
+		audioPlayer();
+		function audioPlayer(){
+			$("#audioPlayer")[0].src = $("#dropdown-content li a")[0];
+			$("#dropdown-content li a").click(function(e){
 				e.preventDefault();
 				$("#audioPlayer")[0].src = this;
 				$("#audioPlayer")[0].play();
