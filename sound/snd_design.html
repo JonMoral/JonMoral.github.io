@@ -57,7 +57,7 @@
 				$("#audioPlayer")[0].play();
 				$("#audioPlayer")[0].active = this;
 			});
-		var nameOfAudio = $("#dropdown-content li a")[0].name;
+		var nameOfAudio = $("#audioPlayer")[0].name();
 			document.getElementById("audioName").innerHTML= nameOfAudio;
 		}
 	</script>
