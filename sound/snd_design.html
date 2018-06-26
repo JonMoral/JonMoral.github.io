@@ -16,24 +16,28 @@
 		Sorry, your browser doesn't support html5!
 	</audio>
 
-	<div class="dropdown">
-	  <button class="dropbtn">Foley</button>
-	  <ul id="dropdown-content">
-	    <li class="current-song"><a href="audio/Field Recordings/Chimes.wav">Chimes</a></li>
-		<li><a href="audio/Field Recordings/Pushing_Box_Wheels.wav">Pushing Box with Wheels</a></li>
-		<li><a href="audio/Field Recordings/Refrigerator_Rumble.wav">Refrigerator</a></li>
-		<li><a href="audio/Field Recordings/Stone_Shatter.wav"</a></li>
-	  </ul>
+	<div class="item1">
+		<div class="dropdown">
+		  <button class="dropbtn">Foley</button>
+		  <ul id="dropdown-content">
+		    <li class="current-song"><a href="audio/Field Recordings/Chimes.wav">Chimes</a></li>
+			<li><a href="audio/Field Recordings/Pushing_Box_Wheels.wav">Pushing Box with Wheels</a></li>
+			<li><a href="audio/Field Recordings/Refrigerator_Rumble.wav">Refrigerator</a></li>
+			<li><a href="audio/Field Recordings/Stone_Shatter.wav"</a></li>
+		  </ul>
+		</div>
 	</div>
 
-	<div class="dropdown">
-	  <button class="dropbtn">Others</button>
-	  <ul id="dropdown-content">
-	    <li class="current-song"><a href="audio/Field Recordings/Chimes.wav">Chimes</a></li>
-		<li><a href="audio/Field Recordings/Pushing_Box_Wheels.wav">Pushing Box with Wheels</a></li>
-		<li><a href="audio/Field Recordings/Refrigerator_Rumble.wav">Refrigerator</a></li>
-		<li><a href="audio/Field Recordings/Stone_Shatter.wav"</a></li>
-	  </ul>
+	<div class="item2">
+		<div class="dropdown">
+		  <button class="dropbtn">Others</button>
+		  <ul id="dropdown-content">
+		    <li class="current-song"><a href="audio/Field Recordings/Chimes.wav">Chimes</a></li>
+			<li><a href="audio/Field Recordings/Pushing_Box_Wheels.wav">Pushing Box with Wheels</a></li>
+			<li><a href="audio/Field Recordings/Refrigerator_Rumble.wav">Refrigerator</a></li>
+			<li><a href="audio/Field Recordings/Stone_Shatter.wav"</a></li>
+		  </ul>
+		</div>
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
@@ -201,6 +205,40 @@
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
+}
+
+/* Grid Stuff */
+.grid-container{
+    display: grid;
+    /*align-items: stretch;*/
+    grid-template-columns: auto auto;
+    grid-gap: 25px 50px;
+    background-color: #f1f1f1;
+    padding:20px;
+    text-align: left;
+  }
+  .grid-item {
+  background-color: #f1f1f1;
+  word-wrap: normal;
+  /*display: flex;*/
+  padding: 10px;
+  font-size: 25px;
+  text-align: left;
+  }
+
+    .item1 {
+  grid-column: 1 / 2;
+  text-align: left;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+.item2{
+  grid-column: 2 / 7;
+  text-align: left;
+  padding-right: 10px;
+  padding-left: 30px;
+  padding-top: 70px;
 }
 
 	</style>
