@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<head><link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet"></head>
+<head><link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
 <body>
-<div class="navbar">
+<div class="navbar" id="myNavbar">
   <a href="../index.html">About</a>
   <a href="../projects/project_list.html">Projects</a>
   <a href="../sound/snd_design">Sound Design</a>
   <a class="active" href="devlog/devlog.html">DevLog</a>
   <a href="../resumé/pdf_viewer">Resumé</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars" style ="color:white"></i>
+  </a>
 </div>
 <h2>DevLog</h2>
 <!--Description Text-->
@@ -34,36 +38,41 @@
 </body>
 
 <style>
-
+    img {
+    max-width: 100%;
+    height: none;
+  }
+    <style>
+  {
+      box-sizing: border-box;
+  }
   body{
-    background-color: #f1f1f1;
+    background-color: #595959;
     /*color:#00000;*/
     text-align:center;
+    color: #d1c6ab;
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
-    font-size: 1.25vw;
+    font-size: calc(10px + .5vw);
+    padding-right: 1vw
+    padding-left: 1vw;
   }
 
-    img {
-    max-width: auto;
-    height: auto;
-    width: auto\9; /* ie8 */
-  }
   /* Style the top navigation bar */
   .navbar {
-      display: flex;
+      /*display: flex;*/
+      overflow: hidden;
       background-color: #333;
-
-      /*position: fixed;
-      top: 0;
-      width: 100%;*/
   }
 
   /* Style the navigation bar links */
   .navbar a {
+    float: left;
+    display: block;
       color: white;
       padding: 14px 20px;
       text-decoration: none;
       text-align: center;
+      font-size: calc(10px + .5vw);
   }
 
   /* Change color on hover */
@@ -76,32 +85,50 @@
     background-color: #2672c9;
       color: white;
   }
-  .main{
-      flex: 30%;
-      background-color: #f1f1f1;
-      padding: 20px;
+
+  .navbar .icon{
+    display:none;
   }
-  .side{
+
+  /* Main column */
+  .main {
       flex: 70%;
-      background-color: #f1f1f1;
+      background-color: #595959;
       padding: 20px;
   }
+
+  .icons{
+      display:inline-block;
+      width: 32px; 
+      height: 32px;
+      float: center; 
+      /*background: rgb(0,0,0);*/
+     }
+
+  .social-media{
+    /*background-color: #595959;*/
+      text-align:center;
+      padding-right: 100px
+      padding-left: 100px;
+  }
+
   .grid-container{
     display: grid;
-    /*align-items: stretch;*/
-    grid-template-columns: auto auto;
-    grid-gap: 25px 50px;
-    background-color: #f1f1f1;
-    padding:20px;
-    text-align: left;
+      /*align-items: stretch;*/
+      grid-template-columns: 50% 50%;
+      grid-gap: 10.126582278481013vw 1.8987341772151898vw;
+      background-color: #595959;
+      padding: 2.5316455696202533vw;
+      text-align: left;
   }
+
   .grid-item {
-  background-color: #f1f1f1;
-  word-wrap: normal;
-  /*display: flex;*/
-  padding: 10px;
-  font-size: 25px;
-  text-align: left;
+    background-color: #595959;
+    word-wrap: normal;
+    /*display: flex;*/
+    padding: 10px;
+    font-size: 25px;
+    text-align: left;
   }
 
   .item1 {
@@ -163,5 +190,57 @@
   padding-left: 20px;
   padding-top: 70px;
 }
-</style>
+  @media screen and (max-width: 600px){
+    .grid-container{
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-gap-padding: 1vw 1.8987341772151898vw;
+    }
+    .item2{
+      grid-column: 1;
+      grid-row: 2;
+    }
+    .item1{
+      grid-row: 1;
+    }
+  }
+
+
+  /*Nav Bar Mobile Settings*/
+  @media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+    img{
+      max-width: 100%
+    }
+  }
+  </style>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myNavbar");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+  </script>
 </html>
