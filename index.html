@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<head><link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet"></head>
+<head><link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
 <body>
 <!-- Navigation Bar -->
 <div class="navbar" id ="myNavbar">
@@ -11,7 +12,7 @@
   <a href="devlog/devlog.html">DevLog</a>
   <a href="resumé/pdf_viewer">Resumé</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
+    <i class="fa fa-bars" style ="color:white"></i>
   </a>
 </div>
 
@@ -60,7 +61,7 @@
     text-align:center;
     color: #d1c6ab;
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
-    font-size: calc(10px + .5vw);;
+    font-size: calc(10px + .5vw);
     padding-right: 100px
     padding-left: 100px;
   }
@@ -80,6 +81,7 @@
 	    padding: 14px 20px;
 	    text-decoration: none;
 	    text-align: center;
+	    font-size: calc(10px + .5vw);
 	}
 
 	/* Change color on hover */
@@ -95,12 +97,6 @@
 
 	.navbar .icon{
 		display:none;
-	}
-
-	/* Column container */
-	.row {  
-	    display: flex;
-	    flex-wrap: wrap;
 	}
 
 	/* Create two unequal columns that sits next to each other */
@@ -120,27 +116,6 @@
 	    flex: 70%;
 	    background-color: #595959;
 	    padding: 20px;
-	}
-
-	/* Fake image, just for this example */
-	.fakeimg {
-	    background-color: #aaa;
-	    width: 100%;
-	    padding: 20px;
-	}
-
-	/*Icon Styling*/
-	.nav3 {
-	    background-color: #E9E8C7;
-	    height: auto;
-	    width: 150px;
-	    float: center;
-	    padding-left: 20px;
-	    font-family: Arial, Helvetica, sans-serif;
-	    font-size: 12px;
-	    color: #333333;
-	    padding-top: 20px;
-	    padding-right: 20px;
 	}
 
 	.icons{
@@ -188,7 +163,7 @@
 	  text-align: left;
 	}
 
-	@media screen and (max-width: 800px){
+	@media screen and (max-width: 600px){
 		.grid-container{
 			grid-template-columns: auto;
 			grid-template-rows: auto;
@@ -218,7 +193,6 @@
 	    position: absolute;
 	    right: 0;
 	    top: 0;
-	    color: white;
 	  }
 	  .navbar.responsive a {
 	    float: none;
@@ -226,11 +200,6 @@
 	    text-align: left;
 	  }
 	}
-
-	 /*a.icons:hover {
-	     width: 70px;
-	     height: 70px;
-	 }*/
 	</style>
 
 	<script>
