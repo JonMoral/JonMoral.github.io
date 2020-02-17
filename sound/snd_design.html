@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<head><link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet"></head>
+<head><link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
 <body>
-<div class="navbar">
+<div class="navbar" id="myNavbar">
   <a href="../index.html">About</a>
   <a href="../projects/project_list.html">Projects</a>
   <a class="active" href="../sound/snd_design">Sound Design</a>
   <a href="../devlog/devlog">DevLog</a>
   <a href="../resumé/pdf_viewer">Resumé</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars" style ="color:white"></i>
+  </a>
 </div>
 
 <h1>Sound Design</h1>
@@ -18,16 +22,18 @@
 	</audio><br>
 
 	<div class="grid-container">
-		<div class="item1">
-			<div class="dropdown">
-			  <button class="dropbtn">Field Recordings</button>
-			  <ul id="dropdown-content">
-			    <li><a href="audio/Field Recordings/Chimes.wav">Chimes</a></li>
-				<li><a href="audio/Field Recordings/Pushing_Box_Wheels.wav">Pushing Box with Wheels</a></li>
-				<li><a href="audio/Field Recordings/Deer_Shakes.wav">Rustling</a></li>
-				<li><a href="audio/Field Recordings/Refrigerator_Rumble.WAV">Refrigerator</a></li>
-				<li><a href="audio/Field Recordings/Stone_Shatter.wav">Shattering Stone in Cave</a></li>
-			  </ul>
+		<div class="grid-item">
+			<div class="item1">
+				<div class="dropdown">
+				  <button class="dropbtn">Field Recordings</button>
+				  <ul id="dropdown-content">
+				    <li><a href="audio/Field Recordings/Chimes.wav">Chimes</a></li>
+					<li><a href="audio/Field Recordings/Pushing_Box_Wheels.wav">Pushing Box with Wheels</a></li>
+					<li><a href="audio/Field Recordings/Deer_Shakes.wav">Rustling</a></li>
+					<li><a href="audio/Field Recordings/Refrigerator_Rumble.WAV">Refrigerator</a></li>
+					<li><a href="audio/Field Recordings/Stone_Shatter.wav">Shattering Stone in Cave</a></li>
+				  </ul>
+				</div>
 			</div>
 		</div>
 
@@ -80,24 +86,11 @@
 		</div>
 	</div>
 
-	<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2cIEMKY43gw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<iframe width="max-width:100%" height="315" src="https://www.youtube-nocookie.com/embed/2cIEMKY43gw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-	</script>
-
-	<script>
-		/*audioPlayer();
-		function audioPlayer(){
-			$("#audioPlayer")[0].src = $("#playlist li a")[0];
-			$("#playlist li a").click(function(e){
-				e.preventDefault();
-				$("#audioPlayer")[0].src = this;
-				$("#audioPlayer")[0].play();
-				$("#audioPlayer")[0].active = this;
-			});
-		}
 	</script>
 
 	<script>
@@ -115,39 +108,60 @@
 		}
 	</script>
 </body>
-	<style>
+
+<style>
 	body{
-    background-color: #f1f1f1;
+    background-color: #595959;
     /*color:#00000;*/
-   	text-align:center;
+    text-align:center;
+    color: #d1c6ab;
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
-    font-size: 1.25vw;
+    font-size: calc(14px + .5vw);
+    padding-right: 1vw
+    padding-left: 1vw;
   }
 
-		/* Style the top navigation bar */
-	.navbar {
-	    display: flex;
-	    background-color: #333;
-	}
+  a:link{
+    color:#56B070;
+    text-decoration: none;
+    font-style:normal;
+  }
+  a:visited{
+    color:#56B070;
+  }
 
-	/* Style the navigation bar links */
-	.navbar a {
-	    color: white;
-	    padding: 14px 20px;
-	    text-decoration: none;
-	    text-align: center;
-	}
+	/* Style the top navigation bar */
+  .navbar {
+      /*display: flex;*/
+      overflow: hidden;
+      background-color: #333;
+  }
 
-	/* Change color on hover */
-	.navbar a:hover {
-	    background-color: #ddd;
-	    color: black;
-	}
+  /* Style the navigation bar links */
+  .navbar a {
+    float: left;
+    display: block;
+      color: white;
+      padding: 14px 20px;
+      text-decoration: normal;
+      text-align: center;
+      font-size: calc(14px + .5vw);
+  }
 
-	.navbar a.active{
-		background-color: #2672c9;
-	    color: white;
-	}
+  /* Change color on hover */
+  .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+  }
+
+  .navbar a.active{
+    background-color: #2672c9;
+      color: white;
+  }
+
+  .navbar .icon{
+    display:none;
+  }
 
 	ul {
 	    list-style-type: none;
@@ -182,6 +196,7 @@
 
 	.audioPlayer{
 		color:black;
+		background-color: black
 	}
 	.playlist{
 		list-style: none;
@@ -257,13 +272,13 @@
     /*align-items: stretch;*/
     grid-template-columns: auto auto auto auto;
     grid-gap: 25px 50px;
-    background-color: #f1f1f1;
+    background-color: #595959;
     padding:20px;
     padding-top: 50px;
     text-align: center;
   }
   .grid-item {
-  background-color: #f1f1f1;
+  background-color: #595959;
   word-wrap: normal;
   /*display: flex;*/
   padding: 10px;
@@ -271,16 +286,56 @@
   text-align: center;
   }
 
-/*.item1 {
-  /*grid-column: 1;
-  text-align: left;
-  /*padding:30px;
-}
-.item2{
-  /*grid-column: 2;
-  text-align: left;
-  /*padding:30px;
-}*/
+/*Media Quereies for Mobile*/
+  @media screen and (max-width: 600px){
+    .grid-container{
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-gap-padding: 0vw 0vw;
+    }
+  }
 
+
+  /*Nav Bar Mobile Settings*/
+  @media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+
+    .navbar a{
+      font-size: calc(16px + .5vw);
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+    img{
+      max-width: 100%
+    }
+  }
+  </style>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myNavbar");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+  </script>
 	</style>
 </html>
