@@ -7,7 +7,7 @@
 <div class="navbar" id="myNavbar">
   <a href="../index.html">About</a>
   <a href="../projects/project_list.html">Projects</a>
-  <a class="active" href="../sound/snd_design">Sound Design</a>
+  <a class="active" href="../sound/snd_design.html">Sound Design</a>
   <a href="../devlog/devlog.html">DevLog</a>
   <a href="../resumé/pdf_viewer.html">Resumé</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -23,7 +23,7 @@
 
 	<div class="grid-container">
 		<div class="grid-item">
-			<div class="item1">
+			<div class="item1" align="left">
 				<div class="dropdown">
 				  <button class="dropbtn">Field Recordings</button>
 				  <ul id="dropdown-content">
@@ -37,7 +37,7 @@
 			</div>
 		</div>
 
-		<div class="item2">
+		<div class="item2" align="left">
 			<div class="dropdown">
 			  <button class="dropbtn">Footsteps</button>
 			  <ul id="dropdown-content">
@@ -54,7 +54,7 @@
 			</div>
 		</div>
 
-		<div class="item2">
+		<div class="item2" align="left">
 			<div class="dropdown">
 			  <button class="dropbtn">Sound Design</button>
 			  <ul id="dropdown-content">
@@ -72,7 +72,7 @@
 			</div>
 		</div>
 
-		<div class="item3">
+		<div class="item3" align="left">
 			<div class="dropdown">
 			  <button class="dropbtn">Sound Scapes</button>
 			  <ul id="dropdown-content">
@@ -86,7 +86,9 @@
 		</div>
 	</div>
 
+	<div class="videos" align="center">
 	<iframe width="max-width:100%" height="315" src="https://www.youtube-nocookie.com/embed/2cIEMKY43gw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
 
 
 
@@ -281,15 +283,13 @@
   background-color: #595959;
   word-wrap: normal;
   /*display: flex;*/
-  padding: 10px;
-  font-size: 25px;
   text-align: center;
   }
 
 /*Media Quereies for Mobile*/
   @media screen and (max-width: 600px){
     .grid-container{
-      grid-template-columns: auto;
+      grid-template-columns: auto auto;
       grid-template-rows: auto;
       grid-gap-padding: 0vw 0vw;
     }
