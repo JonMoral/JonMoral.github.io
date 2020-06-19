@@ -6,10 +6,18 @@
 <body>
 <!-- Navigation Bar -->
 <div class="navbar" id ="myNavbar">
-  <a class="active" href="../index.html">About</a>
-  <a href="projects/project_list.html">Projects</a>
-  <a href="sound/snd_design.html">Sound Design</a>
-  <a href="../test/grid_test.html">Test</a>
+	<div class="navbar-name">
+		Jonathan Morales-Rocha<br>
+		<div class="navbar-subname">
+			Technical Game Designer
+		</div>
+	</div>
+	<div class="navbar-right">
+		<a class="active" href="../index.html">About</a>
+		<a href="projects/project_list.html">Projects</a>
+		<a href="sound/snd_design.html">Sound Design</a>
+		<a href="../test/grid_test.html">Test</a>
+	</div>
 <!--
   <a href="devlog/devlog.html">DevLog</a>
   <a href="resumé/pdf_viewer.html">Resumé</a>
@@ -18,44 +26,46 @@
     <i class="fa fa-bars" style ="color:white"></i>
   </a>
 </div>
-
-<h1>JONATHAN MORALES-ROCHA</h1>
-<p></p>
+<h2>Jonathan Morales-Rocha</h2>
 <!--<div class="row">-->
 	<div class="grid-container">
 	  <div class="item1-left">
-	      <h2>ABOUT ME</h2>
-	      <p>My name is Jonathan Morales-Rocha, I am a Game and Technical Sound Designer.
+	      <h3>ABOUT ME</h3>
+	      <p>My name is Jonathan Morales-Rocha, I am a Game and Technical Sound Designer.</p>
+
+	    <div class="social-media">
+	     <h3>SOCIAL MEDIA</h3>
+		<a href="https://www.linkedin.com/in/jonathan-morales-rocha-54234ba2/" class="icons">
+			<img src="Linkedin_filled.png" alt="LinkedIn" style="width:32px; height:32px;"></a>
+		<a href="https://twitter.com/MakeSoundGames" class="icons">
+			<img src="twitter_blue.png" alt="Twitter" style="width:32px; height:32px";></a>
+		<h3>CONTACT</h3>
+		jonmoralesdesign@gmail.com
+	  	</div>
 	  </div>
 
 	  <div class="item2-right" >
 	  	<img src="../images/PixelPortrait.png" style="max-width:35%; height:auto;">
 	  </div> 
 	</div>
-
-	    <h2>SOCIAL MEDIA</h2>
-	    <div class="social-media">
-		<a href="https://www.linkedin.com/in/jonathan-morales-rocha-54234ba2/" class="icons">
-			<img src="Linkedin_filled.png" alt="LinkedIn" style="width:32px; height:32px;"></a>
-		<a href="https://twitter.com/MakeSoundGames" class="icons">
-			<img src="twitter_blue.png" alt="Twitter" style="width:32px; height:32px";></a>
-		</div>
-		<h2>CONTACT</h2>
-		jonmoralesdesign@gmail.com
 	<!--</div>-->
 
 </body>
 
 	<style>
 	body{
-    background-color: #595959;
+    background-color: #333333;
     /*color:#00000;*/
     text-align:center;
-    color: #d1c6ab;
+    color: #e8e8e8;
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
     font-size: calc(14px + .5vw);
     padding-right: 1vw
     padding-left: 1vw;
+  }
+
+  h2{
+  	line-height: 20%
   }
 
   a:link{
@@ -104,7 +114,7 @@
 	.side {
 	    /*flex: 30%;*/
 	    /*#757575*/
-	    background-color: #595959;
+	    background-color: #333333;
 	    padding: 20px;
 	    padding-right: 400px;
 	    padding-left: 400px;
@@ -114,7 +124,7 @@
 	/* Main column */
 	.main {
 	    flex: 70%;
-	    background-color: #595959;
+	    background-color: #333333;
 	    padding: 20px;
 	}
 
@@ -131,6 +141,7 @@
 	    text-align:center;
 	    padding-right: 100px
 	    padding-left: 100px;
+	    padding-top: 2vw;
 	}
 
 	.grid-container{
@@ -138,14 +149,15 @@
 	    /*align-items: stretch;*/
 	    grid-template-columns: 50% 50%;
 	    grid-gap: 10.126582278481013vw 1.8987341772151898vw;
-	    background-color: #595959;
+	    background-color: #333333;
 	    padding: 2.5316455696202533vw;
 		padding-left: 10.126582278481013vw;
+		padding-top: 0vw;
 	    text-align: left;
 	}
 
 	.grid-item {
-		background-color: #595959;
+		background-color: #333333;
 		word-wrap: normal;
 		/*display: flex;*/
 		padding: 10px;
@@ -162,6 +174,24 @@
 	.item2-right{
 	  grid-column: 2;
 	  text-align: center;
+	}
+
+	.navbar-right
+	{
+		float:right;
+	}
+	.navbar-name
+	{
+		float:left;
+		padding-top: .5vw;
+		padding-left: 1.5vw;
+		color: white;
+	}
+	.navbar-subname
+	{
+		float:left;
+		font-size: .85vw;
+		padding-bottom: .5vw;
 	}
 
 	@media screen and (max-width: 600px){
@@ -190,6 +220,17 @@
 	  .navbar a{
       font-size: calc(16px + .5vw);
     	}
+
+    	.navbar-subname{
+    		font-size: 1.5vh;
+    	}
+	}
+
+	@media screen and (max-width: 1000px)
+	{
+		.navbar-subname{
+	    		font-size: 1.5vh;
+	    }
 	}
 
 	@media screen and (max-width: 600px) {
