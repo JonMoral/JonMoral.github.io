@@ -1,0 +1,152 @@
+
+
+body{
+    background-color: #333333;
+    /*color:#00000;*/
+    text-align:center;
+    color: #e8e8e8;
+    /*font-family: 'Raleway', Helvetica, Arial, sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+    font-size: calc(14px + .5vw);
+    /*padding-right: 1vw
+    padding-left: 1vw;*/
+  }
+body.lighter{
+  font-weight: 300;
+  font-size: calc(14px + .3vw);
+}
+
+  h2 {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+  }
+
+  img{
+    max-width: 100%;
+  }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 0px;
+  background-color:;
+  padding: 2vw;
+  padding-left: 11vw;
+  padding-right: 11vw;
+  justify-content: space-evenly;
+}
+
+.grid-item-text
+{
+  text-align: left;
+  position: relative;
+  grid-row: 1 / span 1000;
+  padding-right: 3vw;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  opacity: 0;
+  color: white;
+  font-size: 3vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transition: .5s ease;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000000;
+  border-radius: 2%;
+}
+
+.container:hover .overlay {
+  opacity: .5;
+}
+.container:hover .text{
+  opacity: 1;
+}
+
+.grid-item-image
+{
+  text-align: right;
+  position: relatives;
+  padding-left: 3vw;
+}
+.grid-item-video
+{
+  position: relative;
+  text-align: right;
+  padding-left: 3vw;
+}
+.grid-item-video iframe{
+  max-width: 100%;
+  max-height: auto;
+}
+
+b.thicker{
+  font-weight: 700;
+}
+b.lightest{
+  font-weight: 100;
+}
+b.normal{
+  font-weight: 400;
+}
+b.light{
+  font-weight: 300;
+}
+
+b.semibold
+{
+  font-weight: 600;
+}
+
+hr{
+max-width: 20vw;
+height: 0px;
+background-color:#d1c6ab;
+opacity: 1;
+border-style: solid;
+}
+
+
+p.extraSpaceAbove{
+  padding-top: 3vw;
+}
+
+
+
+a.page:link{
+    color:#56B070;
+    text-decoration: underline;
+    text-decoration-color: #39754b
+    font-style:normal;
+  }
+a.page:visited{
+  color:#56B070;
+  text-decoration-color: #39754b
+}

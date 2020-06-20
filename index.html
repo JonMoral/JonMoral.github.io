@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<head><link href="https://fonts.googleapis.com/css?family=Raleway:400,900" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></head>
+<head><link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="/css/navbar.css">
+	<script src="/js/navbar.js"></script>
+</head>
 <body>
 <!-- Navigation Bar -->
 <div class="navbar" id ="myNavbar">
@@ -69,49 +73,7 @@
   	line-height: 20%
   }
 
-  a:link{
-    color:#56B070;
-    text-decoration: none;
-    font-style:normal;
-  }
-  a:visited{
-    color:#56B070;
-  }
-
-  /* Style the top navigation bar */
-  .navbar {
-      /*display: flex;*/
-      overflow: hidden;
-      background-color: #333;
-  }
-
-  /* Style the navigation bar links */
-  .navbar a {
-    float: left;
-    display: block;
-      color: white;
-      padding: 14px 20px;
-      text-decoration: normal;
-      text-align: center;
-      font-size: calc(14px + .5vw);
-  }
-
-  /* Change color on hover */
-  .navbar a:hover {
-      background-color: #ddd;
-      color: black;
-  }
-
-  .navbar a.active{
-    background-color: #2672c9;
-      color: white;
-  }
-
-  .navbar .icon{
-    display:none;
-  }
-	/* Create two unequal columns that sits next to each other */
-	/* Sidebar/left column */
+ 
 	.side {
 	    /*flex: 30%;*/
 	    /*#757575*/
@@ -194,69 +156,5 @@
 		font-size: .85vw;
 		padding-bottom: .5vw;
 	}
-
-	@media screen and (max-width: 600px){
-		.grid-container{
-			grid-template-columns: auto;
-			grid-template-rows: auto;
-		}
-		.item2-right{
-			grid-column: 1;
-			grid-row: 2;
-		}
-		.item2-left{
-			grid-row: 1;
-		}
-	}
-
-
-	/*Nav Bar Mobile Settings*/
-	@media screen and (max-width: 600px) {
-	  .navbar a:not(:first-child) {display: none;}
-	  .navbar a.icon {
-	    float: right;
-	    display: block;
-	  }
-
-	  .navbar a{
-      font-size: calc(16px + .5vw);
-    	}
-
-    	.navbar-subname{
-    		font-size: 1.75vh;
-    	}
-	}
-
-	@media screen and (max-width: 1000px)
-	{
-		.navbar-subname{
-	    		font-size: 1.5vh;
-	    }
-	}
-
-	@media screen and (max-width: 600px) {
-	  .navbar.responsive {position: relative;}
-	  .navbar.responsive a.icon {
-	    position: absolute;
-	    right: 0;
-	    top: 0;
-	  }
-	  .navbar.responsive a {
-	    float: none;
-	    display: block;
-	    text-align: left;
-	  }
-	}
 	</style>
-
-	<script>
-		function myFunction() {
-		  var x = document.getElementById("myNavbar");
-		  if (x.className === "navbar") {
-		    x.className += " responsive";
-		  } else {
-		    x.className = "navbar";
-		  }
-		}
-	</script>
 </html>

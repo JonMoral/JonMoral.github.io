@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="../navbar.css">
+</head>
+
 <style>
 
 body{
-    background-color: #595959;
+    background-color: #333333;
     /*color:#00000;*/
     text-align:center;
-    color: #d1c6ab;
+    color: #e8e8e8;
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
     font-size: calc(14px + .5vw);
     padding-right: 1vw
@@ -89,11 +92,36 @@ img {
     max-width: 100%;
     }
 
-
 </style>
 </head>
 <body>
+<!-- Navigation Bar -->
+<div class="navbar" id ="myNavbar">
+  <div class="navbar-name">
+    Jonathan Morales-Rocha<br>
+    <div class="navbar-subname">
+      Technical Game Designer
+    </div>
+  </div>
+  <div class="navbar-right">
+    <a href="../index.html">About</a>
+    <a class="active" href="projects/project_list.html">Projects</a>
+    <a href="sound/snd_design.html">Sound Design</a>
+    <a href="../test/grid_test.html">Test</a>
+  </div>
+<!--
+  <a href="devlog/devlog.html">DevLog</a>
+  <a href="resumé/pdf_viewer.html">Resumé</a>
+-->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars" style ="color:white"></i>
+  </a>
+</div>
+<!--End NavBar-->
 
+
+
+<!--WebsiteContent-->
 <h1>Projects</h1>
 
 <!--Projects-->
@@ -219,6 +247,16 @@ img {
     </div>
   </div> 
 </div>
-
 </body>
+
+<script>
+    function myFunction() {
+      var x = document.getElementById("myNavbar");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+  </script>
 </html>
