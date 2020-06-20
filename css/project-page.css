@@ -16,6 +16,12 @@ body.lighter{
   font-size: calc(14px + .3vw);
 }
 
+h1{
+  padding-bottom: .00025vw;
+  padding-top: 2vw;
+  line-height: 5%
+}
+
   h2 {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
@@ -24,7 +30,6 @@ body.lighter{
   img{
     max-width: 100%;
   }
-
 .grid-container {
   display: grid;
   grid-template-columns: auto auto;
