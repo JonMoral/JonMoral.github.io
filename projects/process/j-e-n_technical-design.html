@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="/css/project-process.css">
   <link rel="stylesheet" href="/css/navbar.css">
   <link rel="stylesheet" href="/css/modal-image.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <script src="/js/navbar.js"></script>
   <script src="/js/modal-image.js"></script>
 </head>
@@ -66,7 +68,7 @@
         <li>Hand-carved wooden figures</li><br>
         <li>Alebrijes paint patterns</li>
       </ul>
-    Both had strong connections to mesoamerica and there was a lot of  reference material which allowed us to create quick mockups.
+    Both had strong connections to mesoamerica and most of our team had grown up seeing these figures.
   </div>
 
   <!--Mood Board-->
@@ -122,15 +124,17 @@
 
         <li class="unbold">We created a Texturing mood board focused on the design patterns on alebrijes.</li><br>
 
-        <li class="unbold">We created low-poly models and tested animating using a limited number of vertices to keep performance up.</li><br>
+        <li class="unbold">We created low-poly models to accentuate the flatness of of faces similar to some wood carvings.</li><br>
+
+        <li class="unbold">We decided to paint textures directly on to models instead of UV unwraping to reflect the work done on alrebrijes.</li><br>
       </ol>
 
 
 
-    <strong style="color:#d9c186">Things learned:</strong>
+    <strong style="color:#d9c186">Things Learned:</strong>
       <ul>
-        <li class="unbold">Hand-carved wooden figures</li><br>
-        <li class="unbold">Alebrijes paint patterns</li>
+        <li class="unbold">Strictly using low poly models without extra vertices around joints and adequate weight painting resulted in jarring artifacts in animations as seen on <em>Fox Walking Animation</em> (The fourth image from the left)</li><br>
+        <li class="unbold">Painting textures created a bottleneck in our art pipeline and resulted in low</li>
       </ul>
   </div>
 

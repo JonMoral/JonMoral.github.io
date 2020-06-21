@@ -167,4 +167,8 @@ a.page:visited{
   .grid-item-text{
     grid-row: 1;
   }
+
+  h1{
+    font-size: 7vw;
+  }
 }
