@@ -17,7 +17,7 @@ body{
   background-color:;
   padding-left: 10vw;
   padding-right: 10vw;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 /*.grid-container > div {
   background-color: rgba(255, 255, 255, 0.8);
@@ -33,6 +33,7 @@ body{
 .grid-item-text
 {
   grid-column: 1 / span 5;
+  font-family: 'Roboto', sans-serif;
   text-align: left;
   font-weight: 100;
   font-size: 1.5vw;
@@ -90,32 +91,37 @@ body{
   opacity: 1;
 }
 
+
 img {
     max-width: 100%;
     }
 
 h1{
   padding-bottom: .00025vw;
+  font-family: 'Noto Sans', sans-serif;
   padding-top: 2vw;
+  font-size: 3vw;
   line-height: 5%
 }
 
 h2{
   padding-top: .15vw;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 h3.normal{
-  font-weight: 400;
+  font-weight: 100;
   padding-top: 1vw;
+  font-size: 2vw;
   line-height: 20%;
 }
 
 h4.light{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-weight: 300;
   line-height: 20%;
   padding-top: 1vw;
+  text-align: center;
 }
 
 hr{
@@ -127,12 +133,52 @@ border-style: solid;
 line-height: 20%;
 }
 
+hr.long{
+max-width: 50vw;
+}
+
 ul{
   padding-left: 5vw;
+  font-family: 'Roboto', sans-serif;
+  line-height: 75%;
+  font-size: 1.25vw;
+}
+
+ol{
+  color:#d9c186;
+  padding-left: 5vw;
+  font-family: 'Roboto', sans-serif;
   line-height: 75%;
   font-size: 1.25vw;
 }
 li{
+  color:#d9c186;
+  font-family: 'Roboto', sans-serif;
   margin: 0vw 0;
   line-height: 100%;
+  font-weight: 400;
+}
+
+li.unbold{
+  color:white;
+  font-family: 'Roboto', sans-serif;
+  margin: 0vw 0;
+  line-height: 100%;
+  font-weight: 100;
+}
+
+
+
+
+/*==============Mobile Part===================*/
+@media screen and (max-width: 900px)
+{
+  .grid-container {
+    grid-template-columns: auto auto;
+  }
+
+  .grid-item-text
+{
+  grid-column: 1 / span 2;
+
 }

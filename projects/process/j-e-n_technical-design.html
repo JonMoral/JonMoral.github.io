@@ -2,11 +2,13 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="/css/project-process.css">
   <link rel="stylesheet" href="/css/navbar.css">
+  <link rel="stylesheet" href="/css/modal-image.css">
   <script src="/js/navbar.js"></script>
+  <script src="/js/modal-image.js"></script>
 </head>
 
 <body>
@@ -34,27 +36,123 @@
 </div>
 
 
-<h1 style="color: #d9c186 ">JUANITO EL NAHUALITO</h1>
-<h3 class="normal" style="color: #56B070" >Technical Design Process</h3>
+<h1 style="color: #56B070 ">JUANITO EL NAHUALITO</h1>
+<h3 class="normal" style="color: #d9c186" >Technical Design Process</h3>
 <hr>
-<h4 class="light" style= "color: #7d7d7d">General Design Goals</h4>
 
 
 <!--Prototype Part-->
 <div class="grid-container">
+
   <div class="grid-item-text">
-    Our team wanted to make a story-driven game centered around Mesoamerican culture and values. 
-    <ul>
+    <h4 class="light" style= "color: #d9c186"> DESIGN PILLARS</h4>
+    <p>Our team wanted to create a story-driven game centered around Mesoamerican culture and values.<br></p>
+    <p>We defined three design goals: </p>
+      <ol>
+        <li>The game must respect and not misrepresent Nahuales and Mesoamerican culture.</li><br>
 
-      <li>Learn about Nahuales and Mesoamerican culture through animated cut-scenes and Gameplay.</li><br>
+        <li>Teach the player about Nahuales and Mesoamerican culture through a fictional narrative.</li><br>
 
-      <li>Gameplay should reinforce the idea of having a connection between nature and humans.</li><br>
-
-      <li>Coming of age story showing the importance of heritage and culture. </li>
-      </ul>
-
-  Game should be a mix of story telling through 2D animations and 3D Gameplay. 
+        <li>Gameplay systems and interactions must imply a positive connection between nature and humans.</li><br>
+      </ol>
+      <hr class="long">
   </div>
+
+<!--Art Style-->
+  <div class="grid-item-text">
+    <h4 class="light" style= "color: #d9c186">SOLIDIFYING ART PIPELINE</h4> 
+    When our team was beginning to define the game's art style we refrenced our design pillars to explore our options and found two main inspirations:<br>
+      <ul>
+        <li>Hand-carved wooden figures</li><br>
+        <li>Alebrijes paint patterns</li>
+      </ul>
+    Both had strong connections to mesoamerica and there was a lot of  reference material which allowed us to create quick mockups.
+  </div>
+
+  <!--Mood Board-->
+  <div class="grid-item" style="text-align: center">
+    <div class="container">
+      <img src="/images/Juanito/mood-board-3D.png" style="max-width:100%; height:auto;">
+      <div class="overlay"></div>
+      <div class="text">3D Art Mood Board</div>
+    </div>
+  </div>
+
+  <!--Mood Board-->
+  <div class="grid-item" style="text-align: center">
+    <div class="container">
+      <img src="/images/Juanito/alebrije-mood-board.jpg" style="max-width:100%; height:auto;">
+      <div class="overlay"></div>
+      <div class="text">Texturing Reference</div>
+    </div>
+  </div>
+
+  <!--FoxAnimations-->
+  <div class="grid-item" style="text-align: center">
+    <div class="container">
+      <img src="/images/Juanito/Fox Idle Animation.gif" style="max-width:100%; height:auto;">
+      <div class="overlay"></div>
+      <div class="text">Low-Poly Fox Model Test</div>
+    </div>
+  </div>
+
+  <div class="grid-item" style="text-align: center">
+    <div class="container">
+      <img src="/images/Juanito/Fox Walking Animation.gif" style="max-width:100%; height:auto;">
+      <div class="overlay"></div>
+      <div class="text">Fox Model Walk Cycle Test</div>
+    </div>
+  </div>
+
+  <!--Juanito Textuerd-->
+  <div class="grid-item" style="text-align: center">
+    <div class="container">
+      <img src="/images/Juanito/juanito-in-game.png" style="max-width:100%; height:auto;">
+      <div class="overlay"></div>
+      <div class="text">Painted Textures on Models</div>
+    </div>
+  </div>
+
+  <!--Text-->
+  <div class="grid-item-text">
+    <br>
+    <strong style="color:#d9c186">Process:</strong>
+    <ol>
+        <li class="unbold">We created a 3D art mood board that was focused on defining the general shape of models</li><br>
+
+        <li class="unbold">We created a Texturing mood board focused on the design patterns on alebrijes.</li><br>
+
+        <li class="unbold">We created low-poly models and tested animating using a limited number of vertices to keep performance up.</li><br>
+      </ol>
+
+
+
+    <strong style="color:#d9c186">Things learned:</strong>
+      <ul>
+        <li class="unbold">Hand-carved wooden figures</li><br>
+        <li class="unbold">Alebrijes paint patterns</li>
+      </ul>
+  </div>
+
+<!--*****************End of Art Style Segment**********************-->
+
+
+
+
+  <div class="grid-item-text">
+    <h4 class="light" style= "color: #d9c186">GAME LOOP</h4> 
+      <ul>
+        <li>1-5 Seconds: The player explores the area by walking and running.</li><br>
+
+        <li>10-20 Seconds: The player must use game knowledge and stories to figure which way to go.</li><br>
+
+        <li>1-5 Minutes: The player will find obstacles and  must figure out that nature surrounding them can help. </li><br>
+
+        <li>10-15 Minutes: The player is faced with a new environment and puzzle to navigate and will remember stories that the game told the player to continue the game. </li>
+      </ul>
+  </div>
+
+
 <!--PaperPrototype-->
   <div class="grid-item">
     <div class="container">

@@ -155,3 +155,16 @@ a.page:visited{
   color:#56B070;
   text-decoration-color: #39754b
 }
+
+
+/*==============Mobile Part===================*/
+@media screen and (max-width: 900px)
+{
+  .grid-container{
+    grid-template-columns: auto;
+  }
+
+  .grid-item-text{
+    grid-row: 1;
+  }
+}
