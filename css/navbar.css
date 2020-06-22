@@ -15,9 +15,10 @@ a.links{
       /*display: flex;*/
       overflow: hidden;
       background-color: #333;
-      /*position: -webkit-sticky; /* Safari 
+      position: -webkit-sticky; /* Safari */
       position: sticky;
-      top: 0;*/
+      top: 0;
+      z-index: 10;
   }
 
   /* Style the navigation bar links */
