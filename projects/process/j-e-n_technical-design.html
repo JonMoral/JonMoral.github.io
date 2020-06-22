@@ -22,19 +22,19 @@
       Technical Game Designer
     </div>
   </div>
-  <div class="navbar-right">
-    <a href="/index.html">About</a>
-    <a class="active" href="../project_list.html">Projects</a>
-  </div>
+    <div class="navbar-right">
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars" style ="color:white"></i>
+    </a>
+      <a class="links" href="/index.html">About</a>
+      <a class="active"  href="/projects/project_list.html">Projects</a>
+    </div>
 <!--
   <a href="sound/snd_design.html">Sound Design</a>
   <a href="../test/grid_test.html">Test</a>
   <a href="devlog/devlog.html">DevLog</a>
   <a href="resumé/pdf_viewer.html">Resumé</a>
 -->
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars" style ="color:white"></i>
-  </a>
 </div>
 
 
@@ -43,33 +43,184 @@
 <hr>
 
 
-<!--Prototype Part-->
+<!--===============Process================-->
 <div class="grid-container">
-
   <div class="grid-item-text">
     <h4 class="light" style= "color: #d9c186"> DESIGN PILLARS</h4>
     <p>Our team wanted to create a story-driven game centered around Mesoamerican culture and values.<br></p>
     <p>We defined three design goals: </p>
       <ol>
-        <li>The game must respect and not misrepresent Nahuales and Mesoamerican culture.</li><br>
+        <li>The game must respect and not misrepresent Nahuales and Mesoamerican culture.</li>
 
-        <li>Teach the player about Nahuales and Mesoamerican culture through a fictional narrative.</li><br>
+        <li>Teach the player about Nahuales and Mesoamerican culture through a fictional narrative.</li>
 
-        <li>Gameplay systems and interactions must imply a positive connection between nature and humans.</li><br>
+        <li>Gameplay systems and interactions must imply a positive connection between nature and humans.</li>
       </ol>
       <hr class="long">
   </div>
 
-<!--Art Style-->
+
+
+
+<!--==============Iterative Process=================-->
   <div class="grid-item-text">
+    <h4 class="light" style= "color: #d9c186; margin-top: 0em">ITERATIVE PROCESS</h4> 
+    <div class= "sub-section">
+      <ol>
+        <li class="unbold"><strong>Paper Prototype:</strong><br>
+          I assisted developing a paper prototype to test the puzzle aspect of the game. We wanted to see how interested the players were about our puzzles and mechanics with a low fidelity prototype.</li>
+
+        <li class="unbold"><strong>First Digital Prototype:</strong><br>
+                We began testing the narrative with the game and if the puzzle more or less engaging once it had a narrative built around it.</li>
+
+        <li class="unbold"><strong >Second Digital Prototype:</strong><br>
+                We tested a 3D world, camera position, game feel, character locomotion, and puzzles with animal interactions.</li>
+
+        <li class="unbold"><strong>Third Digital Prototype:</strong><br>
+                We expanded the 3D world, defined art style, allowed full control of camera, solidified character and animal locomotion, expanding puzzle systems, and expanded narrative.</li>
+
+
+        <li class="unbold"><strong>Final Game:</strong><br>
+                We expanded narrative further to include fully voiced lines, audio systems were implemented, feedback loops were refined, puzzles were tied together narratively, in-game cinematics and pre-renderd cinematics were used to assist story-telling.</li>
+      </ol>
+    </div>
+  </div>
+
+
+<!--PaperPrototype-->
+  <div class="grid-item">
+    <div class="container">
+      <img src="/images/Juanito/PaperPrototype.png" style="max-width:100%; height:auto;">
+      <div class="overlay"></div>
+      <div class="text">Paper Prototype</div>
+    </div>
+  </div>
+
+<!--Unity Prototype-->
+  <div class="grid-item">
+    <div class="container">
+      <img src="/images/Juanito/unity-prototype-1.png" style="max-width:100%; height:auto;">
+      <div class="overlay"></div>
+      <div class="text">First Level Digital Prototype</div>
+    </div>
+  </div>
+
+<!--Unreal Prototype 2-->
+  <div class="grid-item">
+    <div class="container">
+      <img src="/images/Juanito/unreal_prototype_2.png" style="max-width:100%; height:auto;">
+      <div class="overlay"></div>
+      <div class="text">Second Level Digital Prototype</div>
+    </div>
+  </div>
+
+<!--Unity Prototype-->
+  <div class="grid-item">
+    <div class="container">
+      <img src="/images/Juanito/third-prototype.png" style="max-width:100%; height:auto;">
+      <div class="overlay"></div>
+      <div class="text">Third Digital Prototype</div>
+    </div>
+  </div>
+
+  <!--Final Game-->
+  <div class="grid-item">
+    <div class="container">
+      <img src="/images/Juanito/final-game.png" style="max-width:100%; height:auto;">
+      <div class="overlay"></div>
+      <div class="text">Final Game (2nd Level)</div>
+    </div>
+  </div>
+
+
+<!--============End of Iterative Process============-->
+
+<div class="grid-item-text">
+  <hr class="long">
+    <h4 class="light" style= "color: #d9c186">GAME LOOPS AND FLOW</h4> 
+    <div class= "sub-section">
+      <strong style="color:#d9c186">Gameplay Loops:</strong>
+        <ul>
+          <li class="unbold"><strong>1-5 Seconds:</strong> The player explores the area by walking and running.</li>
+
+          <li class="unbold"><strong>10-20 Seconds:</strong> The player must use game knowledge and stories to figure which way to go.</li>
+
+          <li class="unbold"><strong>1-5 Minutes:</strong> The player will find obstacles and must work with nature to overcome obstacles.</li>
+
+          <li class="unbold"><strong>10-15 Minutes:</strong> The player is faced with a new environment and puzzle to navigate and will remember stories that the game told the player to continue the game. </li>
+        </ul>
+    </div>
+
+    <!--<div class= "sub-section">
+      <strong style="color:#d9c186">Positive and Negative Feedback Loops:</strong>
+        <p>I worked on some feedback loops with player to world interactions.</p>
+        <ul>
+          <li class="unbold"><strong>Positive Feedback Loops:</strong> </li> 
+        </ul>
+    </div>-->
+  </div>
+
+<!--=============Systems================-->
+
+<div class="grid-item-text">
+  <hr class="long">
+    <h4 class="light" style= "color: #d9c186">DESIGNING AND IMPLEMENTING SYSTEMS</h4> 
+    <div class= "sub-section">
+      <strong style="color:#d9c186">Audio Systems:</strong>
+        <p>I designed and implemented music and sound systems to work with Unity's built-in audio engine
+        <ul>
+          <li class="unbold"><strong>Adaptive Music:</strong> This allowed us to change the music and layers in real-time based on the state of the game.</li>
+
+          <li class="unbold"><strong>Natural Ambient Soundscapes: </strong> This system allowed us to emulate a natural soundscape in a predefined area using several audio sources that would change position in real-time. This was used to emulate <em>birds</em>, <em>frogs</em>, and <em>people</em> in a pre-defined area.</li>
+
+          <li class="unbold"><strong>Adaptive Terrain Footsteps: </strong> This system allowed us to to change footsteps in real-time using a raycast shot from the foot downwards that would collect information on the terrain's texture. That information would then be used to select which collection of footstep sounds would play.</li>
+
+        </ul>
+    </div>
+
+
+    <!--Puzzle System-->
+    <div class= "sub-section">
+      <strong style="color:#d9c186">Puzzle System:</strong>
+      <p>I assisted in the design and implementation of puzzles and their components.</p>
+          <ul>
+            <li class="unbold"><strong>Animal Interactions: </strong> I assisted in the design and implementation of animal interactions and working with animals to solve puzzles via Cinemachine and Timeline.</li>
+
+            <li class="unbold"><strong>Push/Pull: </strong> I assisted in designing a push/pull mechanic that allowed the player to interact with objects from any direction.</li>
+
+            <li class="unbold"><strong>Rotation: </strong> I assisted in designing a rotation system using raycasts to detect when they were aligned with with the object of importance.</li>
+        </ul>
+    </div>
+  </div>
+<!--============End of Systems & Flow=============-->
+
+
+<!--============Art Style=============-->
+  <div class="grid-item-text">
+    <hr class="long">
     <h4 class="light" style= "color: #d9c186">SOLIDIFYING ART PIPELINE</h4> 
     When our team was beginning to define the game's art style we refrenced our design pillars to explore our options and found two main inspirations:<br>
       <ul>
-        <li>Hand-carved wooden figures</li><br>
+        <li>Hand-carved wooden figures</li>
         <li>Alebrijes paint patterns</li>
       </ul>
-    Both had strong connections to mesoamerica and most of our team had grown up seeing these figures.
+    Both had strong connections to mesoamerica and most of our team had grown up with these figures therefore we had a lot of reference material to work with.
+    <br>
+    <br>
+
+    <strong style="color:#d9c186">Process:</strong>
+    <ol>
+        <li class="unbold">We created a 3D art mood board that was focused on defining the general shape of models</li>
+
+        <li class="unbold">We created a Texturing mood board focused on the painted design patterns on alebrijes.</li>
+
+        <li class="unbold">We created low-poly models to accentuate the rigidness of faces similar to carved figures.</li>
+
+        <li class="unbold">We decided to paint textures directly on to models instead of UV unwraping to reflect the painting process by alebrije makers.</li>
+      </ol>
   </div>
+
+
 
   <!--Mood Board-->
   <div class="grid-item" style="text-align: center">
@@ -118,143 +269,35 @@
   <!--Text-->
   <div class="grid-item-text">
     <br>
-    <strong style="color:#d9c186">Process:</strong>
-    <ol>
-        <li class="unbold">We created a 3D art mood board that was focused on defining the general shape of models</li><br>
+    <div class= "sub-section">
+      <strong style="color:#d9c186">Roadblocks:</strong>
+        <ul>
+          <li class="unbold">Strictly using low poly models without extra vertices around joints and adequate weight painting resulted in <strong><em>jarring artifacts in animations</em></strong> as seen on <em>Fox Walking Animation</em> (The fourth image from the left)</li>
+          <li class="unbold">The art team was exporting models with <strong><em>no set standard</em></strong>.</li>
+          <li class="unbold">After sculpting there was no process for <strong><em>retopologizing</em></strong> models to get them ready to implement in engine.</li>
+          <li class="unbold"><strong><em>Painting textures</em></strong> created a bottleneck in our art pipeline and resulted in low turn around time for assets.</li>
+          <li class="unbold"><strong><em>Weight Painting</em></strong> was only being done by one person.</li>
+          <li class="unbold"><strong><em>Rigging</em></strong> was only being done by one person.</li>
+        </ul>
+    </div>
 
-        <li class="unbold">We created a Texturing mood board focused on the design patterns on alebrijes.</li><br>
 
-        <li class="unbold">We created low-poly models to accentuate the flatness of of faces similar to some wood carvings.</li><br>
-
-        <li class="unbold">We decided to paint textures directly on to models instead of UV unwraping to reflect the work done on alrebrijes.</li><br>
-      </ol>
-
-
-
-    <strong style="color:#d9c186">Things Learned:</strong>
-      <ul>
-        <li class="unbold">Strictly using low poly models without extra vertices around joints and adequate weight painting resulted in jarring artifacts in animations as seen on <em>Fox Walking Animation</em> (The fourth image from the left)</li><br>
-        <li class="unbold">Painting textures created a bottleneck in our art pipeline and resulted in low</li>
-      </ul>
-  </div>
+    <div class= "sub-section">
+        <strong style="color:#d9c186">Addressing Roadblocks:</strong>
+          <ul>
+            <li class="unbold">I worked with the art team and <strong><em>assisted in creating models</em></strong> with extra vertex loops around the joints where we would require extra mobility when animating.</li>
+            <li class="unbold">I worked with our lead artist to <strong><em>set up a standard startup file</em></strong> for the modeling programs that had every required setting as the default and a rectangular prism as a refrence for the player character's scale.</li>
+            <li class="unbold">I assisted in <strong><em>retopologizing</em></strong> of assets until we had some of our artists with shorter tasks begin to retopologize.</li>
+            <li class="unbold">I worked with our texture artist to <strong><em>mirror texture detail on models</em></strong> this doubled speed and still gave the illusion of the Alebrije painting. On top of that we were still able to add non-symmetrical elements to add variance across models.</li>
+            <li class="unbold">I setup a <strong><em>rigging</em></strong> and <strong><em>weight painting pipeline</em></strong> that taught artists how to do it at its simplest level and scale it to more complex models.</li>
+          </ul>
+    </div>
+    <p style="text-align: center"><a class="page" href="/projects/project_list.html"><strong>Return to project list</strong></a>
+</div>
 
 <!--*****************End of Art Style Segment**********************-->
 
 
-
-
-  <div class="grid-item-text">
-    <h4 class="light" style= "color: #d9c186">GAME LOOP</h4> 
-      <ul>
-        <li>1-5 Seconds: The player explores the area by walking and running.</li><br>
-
-        <li>10-20 Seconds: The player must use game knowledge and stories to figure which way to go.</li><br>
-
-        <li>1-5 Minutes: The player will find obstacles and  must figure out that nature surrounding them can help. </li><br>
-
-        <li>10-15 Minutes: The player is faced with a new environment and puzzle to navigate and will remember stories that the game told the player to continue the game. </li>
-      </ul>
-  </div>
-
-
-<!--PaperPrototype-->
-  <div class="grid-item">
-    <div class="container">
-      <img src="/images/Juanito/PaperPrototype.png" style="max-width:100%; height:auto;">
-      <div class="overlay"></div>
-      <div class="text">Paper Prototype</div>
-    </div>
-  </div>
-
-<!--Unity Prototype-->
-  <div class="grid-item">
-    <div class="container">
-      <img src="/images/Juanito/unity-prototype-1.png" style="max-width:100%; height:auto;">
-      <div class="overlay"></div>
-      <div class="text">First Level Digital Prototype</div>
-    </div>
-  </div>
-
-<!--Unreal Prototype 1-->
-  <div class="grid-item">
-    <div class="container">
-      <img src="/images/Juanito/unreal_prototype_1.png" style="max-width:100%; height:auto;">
-      <div class="overlay"></div>
-      <div class="text">Second Level Digital Prototype</div>
-    </div>
-  </div>
-
-<!--Unreal Prototype 2-->
-  <div class="grid-item">
-    <div class="container">
-      <img src="/images/Juanito/unreal_prototype_2.png" style="max-width:100%; height:auto;">
-      <div class="overlay"></div>
-      <div class="text">Second Level Digital Prototype</div>
-    </div>
-  </div>
-
-<!--Unreal Prototype 3-->
-  <div class="grid-item">
-    <div class="container">
-      <img src="/images/Juanito/Unreal_Prototype_3.png" style="max-width:100%; height:auto;">
-      <div class="overlay"></div>
-      <div class="text">Second Digital Prototype</div>
-    </div>
-  </div>
-<!--End of Prototype Images Section-->
-</div>
-
-
-<!--Separation-->
-
-
-<!--Physical & Analog-->
-<h1>Physical and Analog</h1>
-<div class="grid-container">
-<!--Piscando Para Ustedes-->
-  <div class="grid-item">
-    <div class="container">
-      <a href = "https://judeloren.itch.io/recosurreal">
-        <img src ="/images/Piscando Para Ustedes 3.png" style="max-width:100%; height:auto;">
-        <div class="overlay"></div>
-        <div class="text">Piscando Para Ustedes</div>
-      </a>
-    </div>
-  </div>  
-
-  <!--Photon Jumper-->
-  <div class="grid-item">
-    <div class="container">
-      <a href = "">
-        <img src ="/images/PhotonJumper.png" style="max-width:100%; height:auto;">
-        <div class="overlay"></div>
-        <div class="text">Photon Jumper</div>
-      </a>
-    </div>
-  </div> 
-
-  <!--A Slow Racing Game-->
-  <div class="grid-item">
-    <div class="container">
-      <a href = "">
-        <img src ="/images/A Slow Racing Game.jpg" style="max-width:100%; height:auto;">
-        <div class="overlay"></div>
-        <div class="text">A Slow Racing Game</div>
-      </a>
-    </div>
-  </div> 
-
-  <!--Mire of Artists and Designers-->
-  <div class="grid-item">
-    <div class="container">
-      <a href = "">
-        <img src ="/images/The Mire of Artists and Designers.png" style="max-width:100%; height:auto;">
-        <div class="overlay"></div>
-        <div class="text">The Mire of Artists and Designers</div>
-      </a>
-    </div>
-  </div> 
-</div>
 
 </body>
 

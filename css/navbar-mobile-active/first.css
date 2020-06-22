@@ -1,0 +1,16 @@
+  @media screen and (max-width: 600px) {
+    .navbar a:not(:nth-child(1)) {display: none;}
+    .navbar a.icon {
+      float: right;
+      color:white;
+      display: block;
+      } 
+
+    .navbar a{
+      font-size: 1em;
+      }
+
+      /*.navbar-subname{
+        font-size: .5em;
+      }*/
+  }

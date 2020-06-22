@@ -5,12 +5,19 @@ a:link{
 a:visited{
 }
 
+a.links{
+
+}
+
 
   /* Style the top navigation bar */
   .navbar {
       /*display: flex;*/
       overflow: hidden;
       background-color: #333;
+      /*position: -webkit-sticky; /* Safari 
+      position: sticky;
+      top: 0;*/
   }
 
   /* Style the navigation bar links */
@@ -34,6 +41,7 @@ a:visited{
   .navbar a.active{
     background-color: #56B070;
       color: black;
+      position: relative;
   }
 
   .navbar .icon{
@@ -87,13 +95,13 @@ a:visited{
   }
 
   /*Nav Bar Mobile Settings*/
-  @media screen and (max-width: 600px) {
+    @media screen and (max-width: 600px) {
     .navbar a:not(:first-child) {display: none;}
     .navbar a.icon {
       float: right;
       color:white;
       display: block;
-    }
+      } 
 
     .navbar a{
       font-size: 1em;
@@ -117,10 +125,20 @@ a:visited{
       position: absolute;
       right: 0;
       top: 0;
-    }
+      }
     .navbar.responsive a {
       float: none;
       display: block;
       text-align: left;
+      position: static;
+    }
+
+    .navbar.responsive a.links {
+      padding-right: 4.70em;
+    }
+
+    .navbar-right-padding
+    {
+      float:right;
     }
   }

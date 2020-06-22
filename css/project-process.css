@@ -54,7 +54,7 @@ body{
 .text {
   opacity: 0;
   color: white;
-  font-size: 1.5vw;
+  font-size: 1em;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -84,6 +84,10 @@ body{
   background-color: #000000;
 }
 
+.sub-section{
+  padding-bottom: 1.75em;
+}
+
 .container:hover .overlay {
   opacity: .5;
 }
@@ -100,7 +104,7 @@ h1{
   padding-bottom: .00025vw;
   font-family: 'Noto Sans', sans-serif;
   padding-top: 2vw;
-  font-size: 3vw;
+  font-size: 2em;
   line-height: 5%
 }
 
@@ -112,7 +116,7 @@ h2{
 h3.normal{
   font-weight: 100;
   padding-top: 1vw;
-  font-size: 2vw;
+  font-size: 1.25em;
   line-height: 20%;
 }
 
@@ -136,6 +140,8 @@ line-height: 20%;
 hr.long{
 max-width: 50vw;
 color: #A4A7A8;
+margin-top: 2em; 
+margin-bottom: 3em;
 }
 
 ul{
@@ -153,22 +159,33 @@ ol{
   font-size: calc(14px + .25vw);
 }
 li{
-  color:#d9c186;
+  color:white;
   font-family: 'Roboto', sans-serif;
   margin: 0vw 0;
   line-height: 100%;
-  line-height: 2em;
+  line-height: 1.5em;
   font-weight: 400;
+  margin-bottom: 1em;
 }
 
 li.unbold{
   color:white;
   font-family: 'Roboto', sans-serif;
-  margin: 0vw 0;
-  line-height: 2em;
+  margin-bottom: 1em;
+  line-height: 1.5em;
   font-weight: 100;
 }
 
+a.page:link{
+    color:#56B070;
+    text-decoration: none;
+    text-decoration-color: #39754b
+    font-style:normal;
+  }
+a.page:visited{
+  color:#56B070;
+  text-decoration-color: #39754b
+}
 
 
 
