@@ -65,13 +65,17 @@
     text-align:center;
     color: #e8e8e8;
     font-family: 'Raleway', Helvetica, Arial, sans-serif;
-    font-size: calc(14px + .5vw);
-    padding-right: 1vw
-    padding-left: 1vw;
+    font-size: 1.25em;
+    padding-right: 1em
+    padding-left: 1em;
   }
 
   h2{
-  	line-height: 20%
+  	line-height: 20%;
+  }
+  h3{
+  	margin-top: 2em;
+  	margin-bottom: .25em;
   }
 
  
@@ -123,14 +127,20 @@
 	}
 
 	.item1-left{
-		grid-column: 1;
+	
 		text-align: left;
 		padding-right: 5vw;
 	}
 
 	.item2-right{
-	  grid-column: 2;
 	  text-align: center;
+	}
+
+	@media screen and (max-width: 700px)
+	{
+		.grid-container{
+			grid-template-columns: auto;
+		}
 	}
 	</style>
 </html>
