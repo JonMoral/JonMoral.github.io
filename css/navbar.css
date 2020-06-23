@@ -21,6 +21,7 @@ a.links{
       z-index: 10;
   }
 
+
   /* Style the navigation bar links */
   .navbar a {
     float: left;
@@ -81,20 +82,6 @@ a.links{
     font-weight: 400;
   }
 
-  @media screen and (max-width: 600px){
-    .grid-container{
-      grid-template-columns: auto;
-      grid-template-rows: auto;
-    }
-    .item2-right{
-      grid-column: 1;
-      grid-row: 2;
-    }
-    .item2-left{
-      grid-row: 1;
-    }
-  }
-
   /*Nav Bar Mobile Settings*/
     @media screen and (max-width: 600px) {
     .navbar a:not(:first-child) {display: none;}
@@ -121,7 +108,7 @@ a.links{
   }
 
   @media screen and (max-width: 600px) {
-    .navbar.responsive {position: relative;}
+    .navbar.responsive {position: sticky;}
     .navbar.responsive a.icon {
       position: absolute;
       right: 0;

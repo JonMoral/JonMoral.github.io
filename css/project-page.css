@@ -5,9 +5,9 @@ body{
     /*color:#00000;*/
     text-align:center;
     color: #e8e8e8;
-    /*font-family: 'Raleway', Helvetica, Arial, sans-serif;*/
-    font-family: 'Roboto', sans-serif;
-    font-size: calc(14px + .5vw);
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
+    font-size: 1.25em;
     /*padding-right: 1vw
     padding-left: 1vw;*/
   }
@@ -166,9 +166,5 @@ a.page:visited{
 
   .grid-item-text{
     grid-row: 1;
-  }
-
-  h1{
-    font-size: 7vw;
   }
 }
