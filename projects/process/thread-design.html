@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+ <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+ <link rel="shortcut icon" type="image/png" href="/favicon.png">
+
+  <link rel="stylesheet" href="/css/project-process.css">
+  <link rel="stylesheet" href="/css/navbar.css">
+  <link rel="stylesheet" href="/css/modal-image.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="/js/navbar.js"></script>
+  <script src="/js/includeHTML.js"></script>
+  <script src="/js/modal-image.js"></script>
+</head>
+
+<body>
+<!-- Navigation Bar -->
+<div class="navbar" w3-include-html="/html-snippets/navbar-project-active.html"></div>
+
+
+<h1 style="color: #56B070 ">THREAD</h1>
+<h3 class="normal" style="color: #d9c186" >Tech Art and Audio</h3>
+<hr>
+
+
+<!--===============Process================-->
+<div class="grid-container">
+  <div class="grid-item-text">
+    <h4 class="light" style= "color: #d9c186"> SHADERS, LIGHTING, AND AUDIO</h4>
+    <p>When I first joined Thread I was tasked with designing and implementing <b>shaders</b>, <b>visual effects</b>, and <b>audio systems</b> tied to the mental and physical state of the player character: </p>
+      <ul>
+        <li class="unbold">I worked on designing systems and the visual effects and audio that would coincide with those systems.</li>
+
+        <li class="unbold">I worked on an mocap animation pipeline using a Kinect2.</li>
+
+        <li class="unbold">At the core, the narrative will be about a father and his daughter and how migration affects their relationship.</li>
+      </ul>
+      <hr class="long">
+  </div>
+
+
+
+
+<!--==============Iterative Process=================-->
+  <div class="grid-item-text">
+    <h4 class="light" style= "color: #d9c186; margin-top: 0em">SHADER ITERATIVE PROCESS</h4> 
+    <div class= "sub-section">
+      <ol>
+        <li class="unbold"><strong>Planning:</strong><br>
+          I began by learning more about the world, the character, and the different situations the character was going to encounter. This was done to understand where the main character was coming from and  better reflect them through the shaders and visual effects. When exploring different options for new shaders we would need, I considered our target platforms and their capabilities as well as what we wanted to achieve in-game. The team prioritized vision over compatability.</li>
+
+        <li class="unbold"><strong>Testing</strong><br>
+          When approaching testing I had to design and implement shaders that connected to already built sytems and design with user simplicity. This meant defining how the system would connect to the shader prior to developing the shader and exposing the minimum viable variables that would interact with the system. I often provided multiple examples of different shaders we could use for the same or similar effects and broke down the pros and cons for each case.</li>
+
+        <li class="unbold"><strong >Implementation:</strong><br>
+          Implementing the shaders was a fairly smooth process due to the constant conversations our team would have of what systems they would interact with and how. This allowed us to plan out details and build solid frameworks that would be applicable to the development of multiple shaders. I connected the shaders I worked on to the built out systems which usually only meant connecting exposed values into the script.</li>
+
+        <li class="unbold"><strong >Wrap-up:</strong><br>
+          Wrapping up each shader meant that both the systems and shader would not be tweaked any further. We usually did this by testing multiple times and identifying edge cases where things did not work was planned. We would then adjust what we needed to adjust and test more until it was ready for the final product.</li>
+      </ol>
+    </div>
+  </div>
+
+
+   <!--Unreal Prototype 2-->
+  <div class="grid-item">
+    <div class="container">
+      <img src="/images/Thread/volumetric-lighting.gif" style="max-width:100%; height:auto;">
+      <div class="overlay"></div>
+      <div class="text">Volumetric Lighting Test</div>
+    </div>
+  </div>
+
+<!--PaperPrototype-->
+  <div class="grid-item">
+    <div class="container">
+      <img src="/images/Thread/underwater-prototype.gif" style="max-width:100%; height:auto;">
+      <div class="overlay"></div>
+      <div class="text">Underwater Vertex Displacement Shader </div>
+    </div>
+  </div>
+
+
+<!--Unity Prototype-->
+  <div class="grid-item">
+    <div class="container">
+      <img src="/images/Thread/underwater-shader.gif" style="max-width:100%; height:auto;">
+      <div class="overlay"></div>
+      <div class="text">Underwater Image Effect Shader Prototype</div>
+    </div>
+  </div>
+
+  <!--PaperPrototype-->
+  <div class="grid-item">
+    <div class="container">
+      <img src="/images/Thread/underwater-final.gif" style="max-width:100%; height:auto;">
+      <div class="overlay"></div>
+      <div class="text">Underwater Image Effect Shader Final</div>
+    </div>
+  </div>
+
+  <!--Unity Prototype-->
+  <div class="grid-item">
+    <div class="container">
+      <img src="/images/Thread/object-of-importance-shader.png" style="max-width:100%; height:auto;">
+      <div class="overlay"></div>
+      <div class="text">Glow Shader In-Game</div>
+    </div>
+  </div>
+
+
+  <div class="grid-item-text" style="padding-top: 1.2em">
+    <strong style="color:#d9c186">Underwater Shader:</strong>
+    <div class= "sub-section">
+      <p class="unbold">During development of the different visual effects I would provide examples of different solutions for overall the same end goal and provide the pros and cons for each solution. For example, in the above images the second image from the left and the third and fourth image from the left are both solutions to distorting objects and the world to reproduce a light distortion similar to when looking at objects through moving water.</p> 
+
+      <p class="unbold">The second image uses <b>vertex displacement</b> on individual objects and the third image uses an <b>image effect shader</b> on the texture produced by the camera. I explored and tested these two solutions and communicated to the team that the image effect shader (third image) was better suited for the underwater segment we had planned. This was due to multiple reasons such as image effect being far less expensive on the system, it was far more managable to have one shader on one object then managing and optimizing for multiple prefabs, and the image effect shader allowed us to influence the entire viewport of the player instead of specifying which objects would be influened.</p>
+
+      <p class="unbold">As we neered the completion of the shader I began refining the effect to be more subtle as the first example (third image from the left) was a very intense and wall-breaking effect. I brought down the perlin noise influenec and had a much more subtle effect at the end.</p>
+    </div>
+
+
+
+    <strong style="color:#d9c186">Greyscale Image Effect:</strong>
+    <div class= "sub-section">
+      <p class="unbold">When developing the greyscale image effect shader (found below), I was working with a stress and anxiety system we designed. The system channeled information from multiple variables and components in the scene and applied it to a function that would produce a number from 0 to 1 depending on the degree of stress and lerp between different outputs to reflect a transition of anxiety instead of a spike. </p> 
+
+      <p class="unbold">My task was to reflect anxiety through the absence of color. I designed a greyscale image effect shader to produce what we wanted but also experimented with exposing and using the RGB values we ever needed them.</p>
+
+      <p class="unbold">One of the issues we came across with the initial state that greyscale image effect shader was that even though the colors were drawn from the scene, it did not have a strong impact on the player's experience. I decided to add a few other variables brightness and contrast. These two working along the greyscale shader provided the results we were looking for. We were able to get the scene darker without having to adjust our lights in real-time and we increased the intensity of the effect by adjusting the contrast of everything in the camera viewport.</p>
+    </div>
+  </div>
+
+
+
+   <!--GreyScale-->
+  <div class="grid-item">
+    <div class="container">
+      <img src="/images/Thread/color-change-1.gif" style="max-width:100%; height:auto;">
+      <div class="overlay"></div>
+      <div class="text">Soft Blue Color Shift</div>
+    </div>
+  </div>
+
+<!--PaperPrototype-->
+  <div class="grid-item">
+    <div class="container">
+      <img src="/images/Thread/color-change-2.gif" style="max-width:100%; height:auto;">
+      <div class="overlay"></div>
+      <div class="text">Dark Blue Color Shift</div>
+    </div>
+  </div>
+
+
+<!--Unity Prototype-->
+  <div class="grid-item">
+    <div class="container">
+      <img src="/images/Thread/color-change-3.gif" style="max-width:100%; height:auto;">
+      <div class="overlay"></div>
+      <div class="text">Greyscale and Color Shift Toggle Test</div>
+    </div>
+  </div>
+
+    <!--Final Game-->
+  <div class="grid-item">
+    <div class="container">
+      <img src="/images/Thread/color-change-4.gif" style="max-width:100%; height:auto;">
+      <div class="overlay"></div>
+      <div class="text">Greyscale Flash Test</div>
+    </div>
+  </div>
+
+  <!--Unity Prototype-->
+  <div class="grid-item">
+    <div class="container">
+      <img src="/images/Thread/color-lerp-change.gif" style="max-width:100%; height:auto;">
+      <div class="overlay"></div>
+      <div class="text">Greyscale Lerp Test</div>
+    </div>
+  </div>
+
+
+
+
+<!--============End of Iterative Process============-->
+
+
+<!--Game Loops-->
+<div class="grid-item-text">
+  <hr class="long">
+    <h4 class="light" style= "color: #d9c186">ANIMATION PIPELINE</h4> 
+    <div class= "sub-section">
+      <p class="unbold"></p>
+
+        <ul>
+          <li class="unbold"><strong>1-5 Seconds:</strong> The player explores the area by walking and listening to soundscapes.</li>
+
+          <li class="unbold"><strong>10-20 Seconds:</strong> The player interacts with objects to learn more about the father's life.</li>
+
+          <li class="unbold"><strong>1-5 Minutes:</strong> The player reads narrative elements that give exploration meaning.</li>
+
+          <li class="unbold"><strong>10-15 Minutes:</strong> The player interacts with the magical realism story segments where the father describes himself as a hero.</li>
+        </ul>
+    </div>
+
+    <!--<div class= "sub-section">
+      <strong style="color:#d9c186">Positive and Negative Feedback Loops:</strong>
+        <p>I worked on some feedback loops with player to world interactions.</p>
+        <ul>
+          <li class="unbold"><strong>Positive Feedback Loops:</strong> </li> 
+        </ul>
+    </div>-->
+  </div>
+
+  <!--GreyScale-->
+  <div class="grid-item" style="grid-column: 2">
+    <div class="container">
+      <img src="/images/Thread/sitting-drinking-animation.gif" style="max-width:100%; height:auto;">
+      <div class="overlay"></div>
+      <div class="text">Sitting and Drinking</div>
+    </div>
+  </div>
+
+<!--PaperPrototype-->
+  <div class="grid-item" style="grid-column: 3">
+    <div class="container">
+      <img src="/images/Thread/jumping-animation.gif" style="max-width:100%; height:auto;">
+      <div class="overlay"></div>
+      <div class="text">Jumping Animation</div>
+    </div>
+  </div>
+
+
+<!--Unity Prototype-->
+  <div class="grid-item" style="grid-column: 4">
+    <div class="container">
+      <img src="/images/Thread/dancing-animation.gif" style="max-width:100%; height:auto;">
+      <div class="overlay"></div>
+      <div class="text">Greyscale and Color Shift Toggle Test</div>
+    </div>
+  </div>
+
+
+
+
+
+<div class="grid-item-text">
+  <hr class="long">
+    <h4 class="light" style= "color: #d9c186">AUDIO</h4> 
+    <div class= "sub-section">
+      <p class="unbold"></p>
+
+        <ul>
+          <li class="unbold"><strong>1-5 Seconds:</strong> The player explores the area by walking and listening to soundscapes.</li>
+
+          <li class="unbold"><strong>10-20 Seconds:</strong> The player interacts with objects to learn more about the father's life.</li>
+
+          <li class="unbold"><strong>1-5 Minutes:</strong> The player reads narrative elements that give exploration meaning.</li>
+
+          <li class="unbold"><strong>10-15 Minutes:</strong> The player interacts with the magical realism story segments where the father describes himself as a hero.</li>
+        </ul>
+    </div>
+  </div>
+
+</div>
+
+<p style="text-align: center"><a class="page" href="/projects/project_list.html"><strong>Project List</strong></a>
+<!--*****************End of Art Style Segment**********************-->
+
+
+<script>
+  includeHTML();
+</script>
+</body>
+
+
+</html>
