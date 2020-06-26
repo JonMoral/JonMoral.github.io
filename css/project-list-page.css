@@ -13,10 +13,12 @@ body{
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: auto auto auto;
   grid-gap: 0px;
   background-color:;
-  padding: 2vw;
+  padding-left: 7em;
+  padding-right: 7em;
+  padding-bottom: 2em;
   justify-content: space-evenly;
 }
 /*.grid-container > div {
@@ -82,6 +84,12 @@ img {
     max-width: 100%;
     }
 
+    .social-media{
+    /*background-color: #595959;*/
+      text-align:left;
+      padding-top: 0em;
+  }
+
 
 
 /*============Mobile Section===============*/
@@ -89,6 +97,10 @@ img {
 {
   .grid-container{
     grid-template-columns: auto auto;
+  }
+
+  a.social-media{
+    text-align: center;
   }
 }
 

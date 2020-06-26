@@ -156,6 +156,11 @@ a.page:visited{
   text-decoration-color: #39754b
 }
 
+.social-media{
+    /*background-color: #595959;*/
+      text-align:left;
+      padding-top: 0em;
+  }
 
 /*==============Mobile Part===================*/
 @media screen and (max-width: 900px)
@@ -166,5 +171,9 @@ a.page:visited{
 
   .grid-item-text{
     grid-row: 1;
+  }
+
+  a.social-media{
+    text-align: center;
   }
 }
