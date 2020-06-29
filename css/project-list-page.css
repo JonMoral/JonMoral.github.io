@@ -16,8 +16,8 @@ body{
   grid-template-columns: auto auto auto;
   grid-gap: 0px;
   background-color:;
-  padding-left: 7em;
-  padding-right: 7em;
+  padding-left: 6em;
+  padding-right: 6em;
   padding-bottom: 2em;
   justify-content: space-evenly;
 }
@@ -97,6 +97,8 @@ img {
 {
   .grid-container{
     grid-template-columns: auto auto;
+    padding-left: 2em;
+    padding-right: 2em;
   }
 
   a.social-media{
