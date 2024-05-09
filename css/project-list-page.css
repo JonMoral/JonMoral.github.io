@@ -74,7 +74,7 @@ body{
 }
 
 .container:hover .overlay {
-  opacity: .5;
+  opacity: .8;
 }
 .container:hover .text{
   opacity: 1;
